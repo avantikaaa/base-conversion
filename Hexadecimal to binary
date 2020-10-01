@@ -1,0 +1,22 @@
+h=input('enterhexa decima no')
+s=h[::-1]
+l=len(s)
+dec=0
+for i in range(l):
+    if((65<=ord(s[i])<=69)):
+        n=ord(s[i])-55
+    elif(97<=ord(s[i])<=101):
+        n=ord(s[i])-87
+    elif(48<=ord(s[i])<=57):
+        n=ord(s[i])-48
+    dec=dec+(n*(16**i))  
+print(dec)
+b=[]
+while(dec>0):
+    b.append(dec%2)
+    dec=dec//2
+l1=len(b)
+print(l1)
+for i in range(l1-1,-1,-1):
+    print(b[i],end='')
+        
