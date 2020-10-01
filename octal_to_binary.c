@@ -1,3 +1,4 @@
+//FILE OWNER: SRIPRIYA
 #include<stdio.h>
 #include<math.h>
 
